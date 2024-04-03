@@ -1130,11 +1130,11 @@ img {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
-  gap: 20px;
+  /* gap: 20px; */
   padding: 103px 295px 300px;
 }
 .not-found__title {
-  margin-bottom: 22px;
+  margin-bottom: 46px;
 
   color: rgb(76, 175, 80);
   color: var(--color-4CAF50);
@@ -1143,6 +1143,52 @@ img {
   text-transform: uppercase;
 }
 .not-found__subtitle {
+  margin-bottom: 25px;
+
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+.not-found__text {
+  margin-bottom: 45px;
+
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 22px;
+}
+.not-found__link {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 9px;
+  color: var(--color-0F6F2E);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+/* #endregion not-found */
+/* ---------- */
+/* #region contacts-page */
+
+.section {
+}
+.contacts-page {
+}
+.container {
+}
+.contacts-page__container {
+}
+.contacts-page__top {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+}
+.contacts-page__title {
+  color: rgb(0, 0, 0);
+  font-family: News Cycle;
   font-size: 90px;
   font-weight: 400;
   line-height: 110%;
@@ -1150,24 +1196,91 @@ img {
   text-align: left;
   text-transform: uppercase;
 }
-.not-found__text {
-  font-family: Montserrat;
-  font-size: 18px;
-  line-height: 22px;
-}
-.not-found__link {
-  color: var(--color-0F6F2E);
+.contacts-page__link {
+  color: rgb(15, 111, 46);
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 500;
   line-height: 110%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.contacts-page__bottom {
+}
+.contacts-page__bot-left {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+}
+.contacts-page__desc {
+  color: rgb(111, 111, 111);
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.contacts-page__tel {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.contacts-page__watsapp {
+  color: rgb(76, 175, 80);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.contacts-page__mail {
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contacts-page__bot-right {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 36px;
+}
+.contacts-page__adres {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 6px;
+}
+.contacts-page__town {
+  /* color: rgb(0, 0, 0); */
+  /* font-family: News Cycle; */
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contacts-page__office {
+  color: rgb(111, 111, 111);
+  font-family: Montserrat;
+  font-size: 19.5px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
-/* #endregion not-found */
-/* ---------- */
-/* #region ?????????? */
-
-/* #endregion ?????????? */
+/* #endregion contacts-page */
 /* ---------- */
 /* #region ?????????? */
 
