@@ -12,7 +12,7 @@
 
 /* #region MEDIA */
 
-@media (max-width: 1919px) {
+@media (max-width: 1919.6px) {
   .bunner__title {
     font-size: 5.88vw;
   }
@@ -35,6 +35,14 @@
     gap: 0.7vw;
   }
 
+  .case__img-wrap {
+    width: 100%;
+  }
+
+    .case__img-wrap {
+    width: 100%;
+  }
+
   .case__desc {
     width: 100%;
     width: 99%;
@@ -46,6 +54,15 @@
 
   .video__box {
     height: 46.51vw;
+  }
+
+  .cases-page__img-wrap {
+    width: 31vw;
+    height: 17vw;
+  }
+
+  .cases-page__container {
+    gap: 3vw;
   }
 }
 

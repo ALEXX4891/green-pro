@@ -483,7 +483,7 @@ img {
 /* #region cases */
 
 .cases__container {
-  padding: 101px 295px 86px 0;
+  padding: 107px 295px 86px 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: start;
@@ -554,13 +554,14 @@ img {
   z-index: 11;
 }
 
-.case__desc {
-  margin: 0;
-  width: 100%;
-  color: var(--color-5C5C5C);
-  font-size: 20px;
+.case__link {
+  /* margin: 0; */
+  /* width: 100%; */
+  /* color: var(--color-5C5C5C); */
+  /* font-size: 20px; */
   /* text-align: left; */
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+
 }
 
 .cases__btn {
@@ -591,13 +592,30 @@ img {
   transition: transform 0.3s ease-in-out;
 }
 
-.case__img:hover {
+.case__link:hover .case__img {
   transform: scale(1.05);
 }
 
-.case__img-wrap {
-  width: 100%;
+.case__title {
+  padding-top: 14px;
+  min-height: 59px;
+  width: 100%; 
+  color: var(--color-black);
+  font-size: 20px;
+  text-align: left;
+  text-transform: uppercase;
   overflow: hidden;
+  /* z-index: 1000; */
+  /* background-color: #ffffff; */
+}
+
+/* TODO передавать высоту картинки в стили, из БД */
+
+.case__img-wrap {
+  width: 414px;
+  /* height: 89%; */
+  overflow: hidden;
+  /* margin-bottom: 14px; */
 }
 
 /* #endregion cases */
@@ -1399,7 +1417,7 @@ img {
 
 .team__title {
   position: sticky;
-  top: 100px;
+  top: 120px;
   left: 0;
   flex: none;
   margin: 0;
@@ -1474,7 +1492,7 @@ gap: 42px; */
 /* #region cases-page */
 
 .cases-page__container {
-  padding: 32px 295px 107px 0;
+  padding: 10px 295px 107px 0;
   display: flex;
   flex-flow: row nowrap;
   gap: 58px;
@@ -1515,13 +1533,18 @@ gap: 42px; */
 }
 
 .cases-page__item {
-  display: flex;
+  position: relative;
+  /* display: flex;
   flex-flow: column nowrap;
-  gap: 16px;
+  gap: 16px; */
 }
 
 .cases-page__img-wrap {
+  margin-bottom: 19px;
   position: relative;
+  width: 604px;
+  height: 319px;
+  overflow: hidden;
 }
 
 .cases-page__img-wrap svg {
@@ -1531,12 +1554,30 @@ gap: 42px; */
 }
 
 .cases-page__title {
-  max-width: 444px;
   min-height: 44px;
+  max-width: 444px;
   color: var(--color-5C5C5C);
   font-size: 20px;
   line-height: 110%;
-  text-transform: uppercase;
+  text-transform: uppercase;  
+}
+
+
+.cases-page__link::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+}
+
+.cases-page__img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.cases-page__link:hover .cases-page__img   {
+  transform: scale(1.05);
 }
 
 /* #endregion cases-page */
