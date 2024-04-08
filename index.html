@@ -92,6 +92,73 @@
     обсудить проект
   </button>
 
+  <form class="project-form" action="#">
+    <h2 class="project-form__title">
+      Обсудим проект?
+    </h2>
+    <p class="project-form__subtitle">
+      Расскажите нам про вашу идею
+    </p>
+
+    <div class="project-form__inputs">
+      <input class="project-form__input" type="text" placeholder="Как вас зовут?">
+      <input class="project-form__input" type="text" placeholder="E-mail*" required>
+      <input class="project-form__input" type="text" placeholder="Компания">
+    </div>
+
+    <div class="project-form__select-wrap">
+      <p class="project-form__select-title">Тип мероприятия*</p>
+      <select class="project-form__select" name="" id="" required>
+        <option class="project-form__option" value="">Выбрать</option>
+        <option class="project-form__option" value="">Услуги1</option>
+        <option class="project-form__option" value="">Услуги2</option>
+        <option class="project-form__option" value="">Услуги3</option>
+        <option class="project-form__option" value="">Услуги4</option>
+        <option class="project-form__option" value="">Услуги5</option>
+      </select>
+    </div>
+
+    <label class="project-form__label project-form__label_textarea">
+      Комментарий
+      <textarea class="project-form__textarea" name="" id="" rows="3" placeholder="Поговорим о деталях"></textarea>
+    </label>
+
+    <div class="project-form__wrapper">
+      <p class="project-form__subtitle project-form__subtitle_buttons">
+        Примерный бюджет
+      </p>
+      <p class="project-form__desc">
+        Выберите диапозон
+      </p>
+    </div>
+
+    <div class="project-form__btns">
+      <button class="project-form__btn">
+        от 200 тысяч р.
+      </button>
+      <button class="project-form__btn project-form__btn_active">
+        до 500 тысяч р.
+      </button>
+      <button class="project-form__btn">
+        до 700 тысяч р.
+      </button>
+      <button class="project-form__btn">
+        до 1 млн р.
+      </button>
+    </div>
+
+    <label class="project-form__label_check">
+      Я даю согласие на обработку персональных данных
+      <input class="project-form__checkbox" type="checkbox" name="approval" value="approval" />
+      <span class="project-form__mark"></span>
+    </label>
+
+    <button class="project-form__submit" type="submit">
+      Отправить
+    </button>
+
+  </form>
+
   <!-- TODO проверить текст в типографе -->
 
   <main class="main">
