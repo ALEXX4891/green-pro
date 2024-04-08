@@ -92,6 +92,10 @@
     обсудить проект
   </button>
 
+
+  <div class="overlay">
+  </div>
+
   <form class="project-form" action="#">
     <h2 class="project-form__title">
       Обсудим проект?
@@ -102,19 +106,37 @@
 
     <div class="project-form__inputs">
       <input class="project-form__input" type="text" placeholder="Как вас зовут?">
-      <input class="project-form__input" type="text" placeholder="E-mail*" required>
+      <input class="project-form__input" type="email" placeholder="E-mail*" required>
       <input class="project-form__input" type="text" placeholder="Компания">
     </div>
 
     <div class="project-form__select-wrap">
       <p class="project-form__select-title">Тип мероприятия*</p>
       <select class="project-form__select" name="" id="" required>
-        <option class="project-form__option" value="">Выбрать</option>
-        <option class="project-form__option" value="">Услуги1</option>
-        <option class="project-form__option" value="">Услуги2</option>
-        <option class="project-form__option" value="">Услуги3</option>
-        <option class="project-form__option" value="">Услуги4</option>
-        <option class="project-form__option" value="">Услуги5</option>
+        <option class="project-form__option" value="">
+          Выбрать
+        </option>
+        <option class="project-form__option" value="">
+          Тимбилдинг
+        </option>
+        <option class="project-form__option" value="">
+          Деловые мероприятия
+        </option>
+        <option class="project-form__option" value="">
+          Маркетинг и промо
+        </option>
+        <option class="project-form__option" value="">
+          Выездные
+        </option>
+        <option class="project-form__option" value="">
+          Спортивные
+        </option>
+        <option class="project-form__option" value="">
+          Корпоративные
+        </option>
+        <option class="project-form__option" value="">
+          мероприятия профессионального мастерства
+        </option>
       </select>
     </div>
 
@@ -153,11 +175,27 @@
       <span class="project-form__mark"></span>
     </label>
 
-    <button class="project-form__submit" type="submit">
+    <button class="project-form__submit btn-reset" type="submit">
       Отправить
     </button>
 
   </form>
+
+  <div class="modal">
+    <h3 class="modal__title">
+      Спасибо
+    </h3>
+    <p class="modal__subtitle">
+      Корпоративные
+    </p>
+    <p class="modal__desc">
+      Буду ждать!
+    </p>
+    <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.999999 24.5L12.4074 12.8736M1 1.5L12.4074 12.8736M12.4074 12.8736L23 1.5M12.4074 12.8736L23 24.5"
+        stroke="black" stroke-width="1.5" stroke-linecap="round" />
+    </svg>
+  </div>
 
   <!-- TODO проверить текст в типографе -->
 
