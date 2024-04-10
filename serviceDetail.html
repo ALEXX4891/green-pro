@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -11,6 +11,8 @@
   <link rel="manifest" href="./assets/site.webmanifest">
   <link rel="stylesheet" href="./assets/css/normalize.css">
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/media.css">
 </head>
@@ -89,9 +91,9 @@
 
   </header>
 
-  <button class="btn-reset project-btn popup-link lock-padding" href="#popup-form">
+  <a class="btn-reset project-btn popup-link lock-padding" href="#popup-form">
     обсудить проект
-  </button>
+  </a>
 
   <div class="popup" id="popup-form">
     <div class="popup__body">
@@ -111,36 +113,36 @@
           </p>
 
           <div class="project-form__inputs">
-            <input class="project-form__input" type="text" placeholder="Как вас зовут?">
-            <input class="project-form__input" type="email" placeholder="E-mail*" required>
-            <input class="project-form__input" type="text" placeholder="Компания">
+            <input class="project-form__input" type="text" name="name" placeholder="Как вас зовут?">
+            <input class="project-form__input" type="email" name="email" placeholder="E-mail*" required>
+            <input class="project-form__input" type="text" name="company-name" placeholder="Компания">
           </div>
 
           <div class="project-form__select-wrap">
             <p class="project-form__select-title">Тип мероприятия*</p>
-            <select class="project-form__select" name="" id="" required>
-              <option class="project-form__option" value="">
+            <select class="project-form__select" name="filter" required>
+              <option class="project-form__option" value="" selected disabled>
                 Выбрать
               </option>
-              <option class="project-form__option" value="1">
+              <option class="project-form__option" value="team-building">
                 Тимбилдинг
               </option>
-              <option class="project-form__option" value="2">
+              <option class="project-form__option" value="business-events">
                 Деловые мероприятия
               </option>
-              <option class="project-form__option" value="3">
+              <option class="project-form__option" value="marketing-and-promo">
                 Маркетинг и промо
               </option>
-              <option class="project-form__option" value="4">
+              <option class="project-form__option" value="field-trips">
                 Выездные
               </option>
-              <option class="project-form__option" value="5">
+              <option class="project-form__option" value="sport">
                 Спортивные
               </option>
-              <option class="project-form__option" value="6">
+              <option class="project-form__option" value="corporate">
                 Корпоративные
               </option>
-              <option class="project-form__option" value="7">
+              <option class="project-form__option" value="professional-skill-events">
                 мероприятия профессионального мастерства
               </option>
             </select>
@@ -148,7 +150,7 @@
 
           <label class="project-form__label project-form__label_textarea">
             Комментарий
-            <textarea class="project-form__textarea" name="" id="" rows="3"
+            <textarea class="project-form__textarea" name="textarea" rows="3"
               placeholder="Поговорим о деталях"></textarea>
           </label>
 
@@ -162,30 +164,30 @@
           </div>
 
           <div class="project-form__btns">
-            <input class="project-form__radio" type="radio" name="budget" value="200t" id="200t" />
+            <input class="project-form__radio" type="radio" name="budget" value="200t" id="200t">
             <label class="project-form__btn" for="200t">
               от 200 тысяч р.
             </label>
 
-            <input class="project-form__radio" type="radio" name="budget" value="500t" id="500t" />
+            <input class="project-form__radio" type="radio" name="budget" value="500t" id="500t">
             <label class="project-form__btn project-form__btn_active" for="500t">
               до 500 тысяч р.
             </label>
 
-            <input class="project-form__radio" type="radio" name="budget" value="700t" id="700t" />
+            <input class="project-form__radio" type="radio" name="budget" value="700t" id="700t">
             <label class="project-form__btn" for="700t">
               до 700 тысяч р.
             </label>
 
-            <input class="project-form__radio" type="radio" name="budget" value="1m" id="1m" />
-            <label class="project-form__btn" for="1m">
+            <input class="project-form__radio" type="radio" name="budget" value="1000t" id="1000t">
+            <label class="project-form__btn" for="1000t">
               до 1 млн р.
             </label>
           </div>
 
           <label class="project-form__label_check" tabindex="0">
             Я даю согласие на обработку персональных данных
-            <input class="project-form__checkbox" type="checkbox" name="approval" value="approval" />
+            <input class="project-form__checkbox" type="checkbox" name="approval" value="approval">
             <span class="project-form__mark"></span>
           </label>
 
@@ -197,7 +199,6 @@
       </div>
     </div>
   </div>
-
 
 
   <div class="popup" id="success">
@@ -268,9 +269,9 @@
 
         <div class="services-detail__carousel carousel">
 
-          <ul class="carousel__list">
-            <li class="carousel__item">
-              <a href="caseDeteil.html" class="carousel__link">
+          <div class="carousel__list owl-carousel">
+            <div class="carousel__item">
+              <a href="caseDeteil.html" class="carousel__divnk">
                 <div class="carousel__img-wrap">
                   <img class="carousel__img" src="./assets/img/case100.jpg" alt="">
                   <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -282,10 +283,10 @@
                   III Региональный форум по производственной безопасности
                 </p>
               </a>
-            </li>
+            </div>
 
-            <li class="carousel__item">
-              <a href="caseDeteil.html" class="carousel__link">
+            <div class="carousel__item">
+              <a href="caseDeteil.html" class="carousel__divnk">
                 <div class="carousel__img-wrap">
                   <img class="carousel__img" src="./assets/img/case105.jpg" alt="">
                   <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -297,10 +298,10 @@
                   презентация ЖК домашний от застройщика «Страна»
                 </p>
               </a>
-            </li>
+            </div>
 
-            <li class="carousel__item">
-              <a href="caseDeteil.html" class="carousel__link">
+            <div class="carousel__item">
+              <a href="caseDeteil.html" class="carousel__divnk">
                 <div class="carousel__img-wrap">
                   <img class="carousel__img" src="./assets/img/case106.jpg" alt="">
                   <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -313,13 +314,58 @@
                 </p>
               </a>
 
-            </li>
-          </ul>
+            </div>
+
+            <!-- <div class="carousel__item">
+              <a href="caseDeteil.html" class="carousel__divnk">
+                <div class="carousel__img-wrap">
+                  <img class="carousel__img" src="./assets/img/case100.jpg" alt="">
+                  <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.84668 32L31.6178 1M31.6178 1L31.6178 27.5M31.6178 1L3.99634 1" stroke="white"
+                      stroke-width="2" />
+                  </svg>
+                </div>
+                <p class="carousel__title">
+                  III Региональный форум по производственной безопасности
+                </p>
+              </a>
+            </div>
+
+            <div class="carousel__item">
+              <a href="caseDeteil.html" class="carousel__divnk">
+                <div class="carousel__img-wrap">
+                  <img class="carousel__img" src="./assets/img/case105.jpg" alt="">
+                  <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.84668 32L31.6178 1M31.6178 1L31.6178 27.5M31.6178 1L3.99634 1" stroke="white"
+                      stroke-width="2" />
+                  </svg>
+                </div>
+                <p class="carousel__title">
+                  презентация ЖК домашний от застройщика «Страна»
+                </p>
+              </a>
+            </div>
+
+            <div class="carousel__item">
+              <a href="caseDeteil.html" class="carousel__divnk">
+                <div class="carousel__img-wrap">
+                  <img class="carousel__img" src="./assets/img/case106.jpg" alt="">
+                  <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.84668 32L31.6178 1M31.6178 1L31.6178 27.5M31.6178 1L3.99634 1" stroke="white"
+                      stroke-width="2" />
+                  </svg>
+                </div>
+                <p class="carousel__title">
+                  III Региональный форум по производственной безопасности
+                </p>
+              </a>
+
+            </div> -->
+          </div>
 
         </div>
 
       </div>
-
 
       <div class="container services-detail__container services-detail__container_bot">
         <p class="services-detail__about">
@@ -497,6 +543,8 @@
 
   </footer>
 
+  <script src="./assets/js/lib/jquery-3.5.1.min.js"></script>
+  <script src="./assets/js/lib/owl.carousel.min.js"></script>
   <script src="./assets/js/lib/swiper-bundle.min.js"></script>
   <script src="./assets/js/script.js"></script>
 
