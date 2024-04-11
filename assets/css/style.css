@@ -652,8 +652,8 @@ img {
   max-width: 1320px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  gap: 49px 19px;
+  justify-content: space-between;
+  gap: 49px 0;
 }
 
 .clients__item {
