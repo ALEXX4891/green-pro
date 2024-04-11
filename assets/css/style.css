@@ -2136,7 +2136,7 @@ img {
 .project-form__input::placeholder {
   color: rgb(177, 177, 177);
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 110%;
 }
 
@@ -2168,14 +2168,6 @@ img {
   flex-flow: column nowrap;
   gap: 23px;
   margin-bottom: 47px;
-}
-
-input:required {
-  border: 1px solid red;
-}
-
-select:required {
-  border: 1px solid red;
 }
 
 .project-form__select-title {
