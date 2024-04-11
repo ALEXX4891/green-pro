@@ -1428,8 +1428,8 @@ img {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
-  justify-content: flex-start;
-  gap: 25px 50px;
+  justify-content: space-between;
+  gap: 25px 10px;
 }
 
 .services__item {
