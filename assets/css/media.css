@@ -1901,6 +1901,11 @@
 
 @media (max-width: 376px) {
 
+  .burger {
+    width: 45px;
+    height: 40px;
+  }
+
   .man_post {
     text-align: end;
     min-height: 34px;
