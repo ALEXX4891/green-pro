@@ -684,6 +684,10 @@
   .contacts-page__watsapp {
     margin-bottom: 50px;
   }
+
+  .big-mail__link {
+    border-bottom: 5px solid var(--color-black);
+  }
 }
 
 @media (max-width: 1168px) {
@@ -1162,7 +1166,7 @@
 
   .big-mail__link {
     font-size: 9vw;
-    border-bottom: 7px solid var(--color-black);
+    border-bottom: 3px solid var(--color-black);
   }
 
   .runner__container {
@@ -1272,7 +1276,7 @@
   }
 
   .burger {
-    margin-right: -10px;
+    margin-right: -12px;
   }
 
   .footer__top {
