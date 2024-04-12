@@ -688,6 +688,14 @@
   .big-mail__link {
     border-bottom: 5px solid var(--color-black);
   }
+
+  .agency__container {
+    padding: 47px 0 20px;
+}
+
+.agency__logo {
+  margin-bottom: 43px;
+}
 }
 
 @media (max-width: 1168px) {
@@ -979,7 +987,7 @@
   }
 
   .footer__container {
-    grid-template-columns: 1fr 170px 170px;
+    grid-template-columns: 1fr 170px 200px;
   }
 
   .footer__contacts {
@@ -1204,14 +1212,6 @@
   .header__logo svg {
     max-width: 150px;
     max-height: 37px;
-  }
-
-  .agency__container {
-    padding: 47px 0 20px;
-  }
-
-  .agency__logo {
-    margin-bottom: 43px;
   }
 
   .agency__img {
@@ -1772,11 +1772,9 @@
 
   .project-btn {
     width: auto;
-    margin: 0 auto;
-    bottom: 25px;
-    right: 13px;
-    left: 13px;
-    height: 50px;
+    margin: 20px 0;
+    top: 67vh;
+    min-height: 50px;
     font-size: 16px;
     background: var(--color-light-green);
   }

@@ -2,6 +2,7 @@ const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
+  allowTouchMove: true,
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
@@ -9,6 +10,7 @@ const swiper = new Swiper(".swiper", {
   },
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
 });
 

@@ -291,7 +291,6 @@ img {
 .nav__link {
   transition: color 0.3s ease-in-out;
   color: var(--color-5C5C5C);
-  ;
 }
 
 .nav__link_active {
@@ -301,7 +300,6 @@ img {
 .nav__link_footer {
   color: var(--color-black);
 }
-
 
 .nav__link:focus-visible {
   outline: none;
@@ -382,9 +380,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
+  position: sticky;
+  top: 57vh;
+  left: 80vw;
+  /* bottom: 25px; */
+  /* right: 25px; */
+  margin: 20px 0;
   width: 239px;
   height: 50px;
   background: var(--color-black);
@@ -392,7 +393,7 @@ img {
   font-family: Montserrat;
   font-weight: 500;
   text-transform: uppercase;
-  z-index: 100;
+  z-index: 90;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
     border 0.3s ease-in-out;
 }
@@ -412,6 +413,7 @@ img {
 .main {
   padding: 0 25px;
   margin-top: 67px;
+  position: relative;
 }
 
 /* #endregion main */
@@ -1088,6 +1090,7 @@ img {
 
 .agency__logo svg {
   width: 100%;
+  height: max-content;
 }
 
 .agency__img {
@@ -2050,11 +2053,11 @@ img {
   right: 12px;
 }
 
-.carousel__img:hover  {
+.carousel__img:hover {
   transform: scale(1.05);
 }
 
-.carousel__img {  
+.carousel__img {
   transition: transform 0.3s ease-in-out;
 }
 
