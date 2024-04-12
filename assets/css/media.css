@@ -59,7 +59,7 @@
   }
 
   .case__img-wrap {
-    width: 100%;
+    /* width: 100%; */
   }
 
   .case__desc {
@@ -107,6 +107,13 @@
 
   .cases-page__container {
     gap: 3vw;
+  }
+}
+
+@media (max-width: 1870px) {
+  .services__list {
+    justify-content: space-between;
+    gap: 25px 10px;
   }
 }
 
@@ -497,7 +504,7 @@
 
   .card-serv__title {
     font-size: 20px;
-    flex: 0 0 25px;
+    flex: 1 1 25px;
   }
 
   .card-serv__text {
@@ -506,11 +513,11 @@
 
   .services__list {
     padding: 0 26px;
-    gap: 3px 10px;
+    /* gap: 25px 10px; */
   }
 
   .card-serv__text {
-    flex: 0 0 70px;
+    flex: none;
   }
 
   .card-serv__right {
@@ -1509,6 +1516,17 @@
 }
 
 @media (max-width: 560px) {
+
+  .services__list {  
+    flex-flow: column nowrap;  
+    gap: 27px;
+  }
+
+  .services__item {
+    flex: none;
+}
+
+
   .modal__title {
     font-size: 30px;
   }
@@ -1787,10 +1805,6 @@
 
   .services__container_top {
     padding: 77px 0 90px;
-  }
-
-  .services__list {
-    gap: 27px 45px;
   }
 
   .card-serv__right {
