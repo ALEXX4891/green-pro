@@ -1052,6 +1052,7 @@
 
   .case-deteil__photo {
     flex: 1 1 45%;
+    padding-bottom: 33%;
   }
 
   .case-deteil__photo-list {
@@ -1768,6 +1769,7 @@
 
   .case-deteil__photo {
     flex: 1 1 100%;
+    padding-bottom: 67%;
   }
 
   .project-btn {

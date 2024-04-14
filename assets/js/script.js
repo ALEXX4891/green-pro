@@ -1,3 +1,7 @@
+Fancybox.bind('[data-fancybox]', {
+  // Your custom options
+});  
+
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
