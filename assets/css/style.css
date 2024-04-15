@@ -326,6 +326,7 @@ img {
   width: 50px;
   height: 50px;
   cursor: pointer;
+  display: none;
 }
 
 .burger__btn {
@@ -393,9 +394,9 @@ img {
   justify-content: center;
   align-items: center;
   position: sticky;
-  top: 57vh;
   left: 100%;
-  margin: 20px 1px;
+  bottom: 34vh;
+  /* margin: 20px 1px; */
   width: 239px;
   height: 50px;
   background: var(--color-black);
@@ -421,8 +422,7 @@ img {
 }
 
 .main {
-  padding: 0 25px;
-  margin-top: 67px;
+  padding: 67px 25px 0;
   position: relative;
   max-width: 1920px;
   margin: 0 auto;
@@ -1601,7 +1601,7 @@ img {
   border-bottom: 1px solid var(--color-EDEDED);
   display: flex;
   flex-flow: row nowrap;
-  gap: 0;
+  gap: 27px;
 }
 
 .team__left-block {
@@ -1682,11 +1682,16 @@ img {
 /* #region cases-page */
 
 .cases-page__container {
-  padding: 10px 295px 107px 0;
+  padding: 10px 295px 65px 0;
   display: flex;
   flex-flow: row nowrap;
   gap: 58px;
+}
+
+.cases-page {
+  padding-top: 20px;
   border-bottom: 1px solid var(--color-E9E9E9);
+
 }
 
 .cases-page__filter-wrap {

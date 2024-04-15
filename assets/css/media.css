@@ -695,7 +695,24 @@
 .agency__logo {
   margin-bottom: 43px;
 }
+
+.runner__wrap svg path {
+  stroke-width: 1.5;
 }
+
+.runner__wrap svg {
+  width: 22px;
+}
+
+.runner__list {
+  gap: 15px;
+}
+
+.runner__wrap {
+  gap: 15px;
+}
+
+
 
 @media (max-width: 1168px) {
   .header__container,
@@ -1230,7 +1247,7 @@
   }
 
   .footer__container {
-    padding: 28px 0 0;
+    padding: 0;
   }
 
   .services-detail__subtitle {
@@ -1770,9 +1787,9 @@
   }
 
   .project-btn {
-    width: auto;
-    margin: 20px 0;
-    top: 84vh;
+    width: 100%;
+    /* margin: 20px 0; */
+    bottom: 25px;
     min-height: 50px;
     font-size: 16px;
     background: var(--color-light-green);
