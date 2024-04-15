@@ -2006,7 +2006,6 @@ img {
   position: relative;
   display: block;
   padding-bottom: 16%;
-
 }
 
 .case-deteil__photo img {
@@ -2023,8 +2022,6 @@ img {
 .case-deteil__photo:hover img {
   transform: scale(1.05);
 }
-
-
 
 /* #endregion case-deteil */
 /* ---------- */
@@ -2475,13 +2472,62 @@ img {
 
 /* #endregion modal  */
 
-
 .fancybox__content {
-  width: 100% !important; 
+  width: 100% !important;
   height: 100% !important;
 }
 
 .fancybox__container {
-  --fancybox-bg: rgba(0, 0, 0, 0.8) !important;  
+  --fancybox-bg: rgba(0, 0, 0, 0.8) !important;
 }
 
+.container_info {
+  padding: 30px;
+}
+
+.personal_title {
+  font-size: 60px;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+.policy__heading {
+  font-size: 100px;
+  line-height: 110%;
+  margin-bottom: 30px;
+}
+
+.policy__text,
+.personal_info {
+  font-size: 26px;
+  line-height: 150%;
+  margin-bottom: 25px;
+}
+
+.politics_info_subtitle {
+  font-size: 40px;
+  line-height: 150%;
+  margin-bottom: 25px;
+}
+
+.personal_info-a {
+  font-size: 26px;
+  line-height: 150%;
+  margin-bottom: 25px;
+}
+
+.policy__title {
+  font-size: 60px;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+.policy__subtitle {
+  margin-bottom: 25px;
+  line-height: 150%;
+  font-size: 40px;
+}
+
+.policy__item {
+  margin-bottom: 10px;
+}
