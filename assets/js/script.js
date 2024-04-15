@@ -26,6 +26,8 @@ const filterBtns = document.querySelectorAll(".filter__item");
 const casesItems = document.querySelectorAll(".cases-page__item");
 const casesAllBtn = document.querySelector(".cases-page__item_all");
 const caseNone = document.querySelector(".cases-page__item_none");
+const filterWrap = document.querySelector(".cases-page__select-wrap");
+const filter = document.querySelector(".filter ");
 
 if (filterBtns) {
   filterBtns.forEach((item) => {
@@ -38,6 +40,9 @@ if (filterBtns) {
         item.style.display = "none";
         caseNone.style.display = "block";
       });
+      filterWrap.classList.remove("cases-page__select-wrap_active");
+      filter.classList.remove("cases-page__filter_active");
+
     });
   });
 }

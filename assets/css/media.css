@@ -552,16 +552,22 @@
     visibility: hidden;
     gap: 10px;
     opacity: 0;
-    max-width: 320px;
-    overflow: hidden;
-    z-index: 10;
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow: auto;
+    z-index: 200;
     background-color: var(--color-white);
     transition: visibility 0.8s ease-in-out, opacity 0.8s ease-in-out,
       transform 0.8s ease-in-out;
   }
 
+
+  .filter__item_active::after {
+    content: none;
+  }
+
   .filter__item {
-    overflow: hidden;
+    max-width: 400px;
   }
 
   .cases-page__filter_active {
@@ -815,6 +821,7 @@
 
   .cases-page__filter {
     top: 40px;
+    height: calc(100vh - 200px);
   }
 }
 
