@@ -526,11 +526,11 @@
 
   .card-serv__right {
     gap: 13px;
-    flex: 0 0 250px;
+    flex: 1 0 250px;
   }
 
   .services__item {
-    flex: 0 0 300px;
+    flex: 1 0 300px;
   }
 
   .services__title {
@@ -708,7 +708,7 @@
 }
 
 .runner__wrap svg path {
-  stroke-width: 1.5;
+  stroke-width: 2;
 }
 
 .runner__wrap svg {
@@ -1554,8 +1554,8 @@
 
   .services__item {
     flex: none;
+    gap: 11px;
 }
-
 
   .modal__title {
     font-size: 30px;
@@ -1837,7 +1837,7 @@
   }
 
   .card-serv__right {
-    flex: 0 0 245px;
+    flex: 1 0 245px;
   }
 
   .services__brif-text {
@@ -1865,9 +1865,6 @@
 
   .card-serv__text {
     flex: none;
-  }
-  .services__item {
-    gap: 11px;
   }
 
   .services__title {
