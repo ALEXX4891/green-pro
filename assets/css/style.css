@@ -382,10 +382,8 @@ img {
   align-items: center;
   position: sticky;
   top: 57vh;
-  left: 80vw;
-  /* bottom: 25px; */
-  /* right: 25px; */
-  margin: 20px 0;
+  left: 100%;
+  margin: 20px 1px;
   width: 239px;
   height: 50px;
   background: var(--color-black);
@@ -414,6 +412,8 @@ img {
   padding: 0 25px;
   margin-top: 67px;
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 /* #endregion main */
