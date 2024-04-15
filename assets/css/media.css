@@ -297,6 +297,7 @@
 
   .carousel__title {
     font-size: 14px;
+    width: 100%;
   }
 
   .services-detail__link svg {
@@ -317,10 +318,6 @@
 
   .services-detail__brif-text {
     margin-bottom: 16px;
-  }
-
-  .carousel__title {
-    width: 31vw;
   }
 
   .carousel__img-wrap svg {
@@ -1121,10 +1118,6 @@
     padding: 80px 0 73px 0;
   }
 
-  .carousel__title {
-    width: 43vw;
-  }
-
   .services-detail__container_bot {
     padding: 81px 0 80px 0;
   }
@@ -1386,10 +1379,6 @@
 
   .carousel__link {
     gap: 15px;
-  }
-
-  .carousel__title {
-    width: 100%;
   }
 
   .services-detail__container_bot {

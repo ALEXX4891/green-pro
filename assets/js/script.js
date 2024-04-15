@@ -209,22 +209,33 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-let items = 3;
 let margin = 16;
 
 jQuery(($) => {
   if ($(window).width() <= 768) {
-    items = 2;
     margin = 13;
   }
 });
 
 jQuery(($) => {
-  if ($(window).width() > 376) {
+  if ($(window).width() > 560) {
     $(".owl-carousel").owlCarousel({
       loop: true,
-      margin: 16,
-      items: items,
+      margin: margin,
+      nav: false,
+      dots: false,
+      singleItem: false,
+      autoplay: true,
+      smartSpeed: 1000,
+      autoplayTimeout: 5000,
+      responsive: {
+        561: {
+          items: 2.3
+        },
+        900: {
+          items: 3.3
+        },
+      }
     });
   }
 });
