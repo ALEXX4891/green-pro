@@ -376,15 +376,25 @@ img {
 /* ---------- */
 /* #region main */
 
+.project-btn__wrap {
+  max-width: 1920px;
+  padding-right: 26px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
 .project-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   position: sticky;
   top: 57vh;
-  left: 80vw;
-  /* bottom: 25px; */
-  /* right: 25px; */
+  left: 100%;
   margin: 20px 0;
   width: 239px;
   height: 50px;

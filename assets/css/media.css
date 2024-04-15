@@ -58,10 +58,6 @@
     gap: 0.7vw;
   }
 
-  .case__img-wrap {
-    /* width: 100%; */
-  }
-
   .case__desc {
     width: 100%;
     width: 99%;
@@ -1071,6 +1067,11 @@
 }
 
 @media (max-width: 768px) {
+
+  .project-btn__wrap {
+    padding: 0 31px;
+  }
+
   .header__wite-block {
     height: 52px;
   }
@@ -1897,6 +1898,10 @@
   .header,
   .footer,
   .main {
+    padding: 0 13px;
+  }
+
+  .project-btn__wrap {
     padding: 0 13px;
   }
 }
