@@ -18,7 +18,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const burder = document.querySelector(".burger");
+const burger = document.querySelector(".burger");
 const menu = document.querySelector(".header__nav");
 const eventType = document.querySelector(".cases-page__select-wrap");
 const eventFilter = document.querySelector(".cases-page__filter");
@@ -56,7 +56,7 @@ if (casesAllBtn) {
   });
 }
 
-burder.addEventListener("click", function () {
+burger.addEventListener("click", function () {
   this.classList.toggle("burger_active");
   menu.classList.toggle("header__nav_active");
   if (menu.classList.contains("header__nav_active")) {
@@ -65,6 +65,17 @@ burder.addEventListener("click", function () {
     bodyUnLock();
   }
 });
+
+//закрытие менб при клике в любое место:
+document.addEventListener("click", function (e) {
+  if (burger.classList.contains("burger_active") && burger) {
+    if (!e.target.closest(".burger") && !e.target.closest(".header__nav")) {
+      burger.classList.remove("burger_active");
+      menu.classList.remove("header__nav_active");
+      bodyUnLock();
+    }
+  }
+})
 
 if (eventType) {
   eventType.addEventListener("click", function () {
