@@ -1755,6 +1755,10 @@ img {
   flex: 0 0 49%;
 }
 
+.cases-page__item_none {
+  display: none;
+}
+
 .cases-page__img-wrap {
   margin-bottom: 19px;
   position: relative;

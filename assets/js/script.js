@@ -1,6 +1,6 @@
-Fancybox.bind('[data-fancybox]', {
+Fancybox.bind("[data-fancybox]", {
   // Your custom options
-});  
+});
 
 const swiper = new Swiper(".swiper", {
   // Optional parameters
@@ -22,6 +22,34 @@ const burder = document.querySelector(".burger");
 const menu = document.querySelector(".header__nav");
 const eventType = document.querySelector(".cases-page__select-wrap");
 const eventFilter = document.querySelector(".cases-page__filter");
+const filterBtns = document.querySelectorAll(".filter__item");
+const casesItems = document.querySelectorAll(".cases-page__item");
+const casesAllBtn = document.querySelector(".cases-page__item_all");
+const caseNone = document.querySelector(".cases-page__item_none");
+
+if (filterBtns) {
+  filterBtns.forEach((item) => {
+    item.addEventListener("click", function () {
+      filterBtns.forEach((item) => {
+        item.classList.remove("filter__item_active");
+      });
+      this.classList.add("filter__item_active");
+      casesItems.forEach((item) => {
+        item.style.display = "none";
+        caseNone.style.display = "block";
+      });
+    });
+  });
+}
+
+if (casesAllBtn) {
+  casesAllBtn.addEventListener("click", function () {
+    casesItems.forEach((item) => {
+      item.style.display = "block";
+      caseNone.style.display = "none";
+    });
+  });
+}
 
 burder.addEventListener("click", function () {
   this.classList.toggle("burger_active");
