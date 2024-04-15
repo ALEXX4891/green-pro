@@ -1762,6 +1762,7 @@ img {
 
 .cases-page__item_none {
   display: none;
+  flex: 0 1 100%;
 }
 
 .cases-page__img-wrap {
