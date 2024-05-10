@@ -542,7 +542,7 @@ img {
 /* #region cases */
 
 .cases__container {
-  padding: 107px 295px 86px 0;
+  padding: 100px 295px 86px 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: start;
@@ -592,17 +592,20 @@ img {
 }
 
 .cases__wrapper {
-  display: flex;
-  flex-flow: column wrap;
-  height: 1672px;
-  gap: 50px 18px;
+  column-count: 3;
+  margin-bottom: 25px;
 }
 
 .case {
+  width: calc(100% / 3);
+  margin-bottom: 35px;
+}
+
+.case__link {
   position: relative;
   display: flex;
   flex-flow: column nowrap;
-  gap: 18px;
+  gap: 15px;
   width: 414px;
 }
 
@@ -650,7 +653,6 @@ img {
 }
 
 .case__title {
-  padding-top: 14px;
   min-height: 59px;
   width: 100%;
   color: var(--color-black);
