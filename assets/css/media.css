@@ -48,16 +48,6 @@
     font-size: 2.6vw;
   }
 
-  .cases__wrapper {
-    height: 87vw;
-    gap: 3% 1%;
-  }
-
-  .case {
-    width: 32.59%;
-    gap: 0.7vw;
-  }
-
   .case__desc {
     width: 100%;
     width: 99%;
@@ -224,10 +214,6 @@
 
   .team__list {
     gap: 43px 1%;
-  }
-
-  .cases__wrapper {
-    height: 101vw;
   }
 
   .clients__left-block,
@@ -631,10 +617,6 @@
     left: 0;
   }
 
-  .cases__wrapper {
-    height: 108vw;
-  }
-
   .footer__bottom {
     flex-direction: column;
     gap: 20px;
@@ -722,7 +704,7 @@
 @media (max-width: 1260px) {
   .services__item {
     flex: 0 0 48%;
-}
+  }
 }
 
 @media (max-width: 1168px) {
@@ -798,10 +780,6 @@
   .clients__container,
   .cases__container {
     padding: 68px 50px;
-  }
-
-  .cases__wrapper {
-    height: 118vw;
   }
 
   .work__list {
@@ -1111,6 +1089,25 @@
   .services__list {
     padding: 0 26px;
   }
+
+  .case__img-wrap svg {
+    top: 6px;
+    right: 6px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .case__link {
+    gap: 11px;
+  }
+
+  .case {
+    margin-bottom: 15px;
+  }
+
+  .cases__wrapper {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1317,10 +1314,6 @@
 
   .case__title {
     padding: 0;
-  }
-
-  .cases__wrapper {
-    height: 136vw;
   }
 
   .burger {
@@ -1904,33 +1897,6 @@
     padding: 75px 0 100px;
   }
 
-  .cases__wrapper {
-    height: 250vw;
-    gap: 1% 1%;
-  }
-
-  .case__img-wrap {
-    width: 96%;
-  }
-
-  .case__img-wrap svg {
-    width: 10px;
-    top: 1px;
-    right: 14px;
-  }
-
-  .case__title {
-    min-height: 40px;
-  }
-
-  .case {
-    width: 50%;
-  }
-
-  .case:last-child {
-    display: none;
-  }
-
   .clients__item {
     width: 45%;
     height: 51px;
@@ -1945,12 +1911,18 @@
   .project-btn__wrap {
     padding: 0 13px;
   }
-}
 
-@media (max-width: 470px) {
   .cases__wrapper {
-    height: 260vw;
+    column-count: 2;
   }
+
+  .case__title {
+    min-height: unset;
+  }
+
+  .case {
+    margin-bottom: 27px;
+}
 }
 
 @media (max-width: 376px) {
@@ -1974,10 +1946,6 @@
 
   .not-found__container {
     padding: 90px 0 200px;
-  }
-
-  .cases__wrapper {
-    height: 265vw;
   }
 
   .not-found__title {
@@ -2026,23 +1994,5 @@
 
   .carousel__list {
     gap: 24px;
-  }
-}
-
-@media (max-width: 350px) {
-  .cases__wrapper {
-    height: 270vw;
-  }
-}
-
-@media (max-width: 330px) {
-  .cases__wrapper {
-    height: 280vw;
-  }
-}
-
-@media (max-width: 280px) {
-  .cases__wrapper {
-    height: 300vw;
   }
 }
