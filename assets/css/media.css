@@ -37,7 +37,7 @@
   }
 
   .services-detail__container_bot {
-    padding: 91px 33% 150px 295px;
+    padding: 91px 33% 70px 295px;
   }
 
   .bunner__subtitle {
@@ -102,8 +102,6 @@
     max-width: 100%;
   }
 
-
-
   .cases-page__list {
     gap: 2vw 1vw;
   }
@@ -120,14 +118,17 @@
 @media (max-width: 1870px) {
   .services__list {
     justify-content: space-between;
-    gap: 25px 10px;
+    gap: 25px 2%;
   }
 }
 
 @media (max-width: 1720px) {
-  .header__container,
-  .footer__container {
+  .header__container {
     padding: 5px 150px;
+  }
+
+  .footer__container {
+    padding: 11px 150px 5px;
   }
 
   .services-detail__subtitle {
@@ -168,7 +169,7 @@
   }
 
   .services-detail__container_bot {
-    padding: 86px 33% 150px 150px;
+    padding: 86px 33% 70px 150px;
   }
 
   .services-detail__container_mid {
@@ -187,7 +188,7 @@
 
   .cases__container,
   .cases-page__container {
-    padding: 68px 150px 68px 0;
+    padding: 68px 150px 25px 0;
   }
 
   .team__title {
@@ -243,7 +244,8 @@
 @media (max-width: 1460px) {
   .header__container,
   .footer__container {
-    padding: 5px 100px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .services-detail__subtitle {
@@ -275,7 +277,7 @@
   }
 
   .services-detail__container_bot {
-    padding: 86px 33% 150px 100px;
+    padding: 86px 33% 70px 100px;
   }
 
   .services-detail__container_mid {
@@ -485,7 +487,7 @@
   .clients__container,
   .cases__container,
   .cases-page__container {
-    padding: 68px 100px;
+    padding: 68px 100px 25px;
     flex-flow: column nowrap;
   }
 
@@ -525,11 +527,6 @@
 
   .card-serv__right {
     gap: 13px;
-    flex: 1 0 250px;
-  }
-
-  .services__item {
-    flex: 1 0 300px;
   }
 
   .services__title {
@@ -570,7 +567,6 @@
     transition: visibility 0.8s ease-in-out, opacity 0.8s ease-in-out,
       transform 0.8s ease-in-out;
   }
-
 
   .filter__item_active::after {
     content: none;
@@ -700,35 +696,43 @@
 
   .agency__container {
     padding: 47px 0 20px;
+  }
+
+  .agency__logo {
+    margin-bottom: 43px;
+  }
+
+  .runner__wrap svg path {
+    stroke-width: 2;
+  }
+
+  .runner__wrap svg {
+    width: 22px;
+  }
+
+  .runner__list {
+    gap: 15px;
+  }
+
+  .runner__wrap {
+    gap: 15px;
+  }
 }
 
-.agency__logo {
-  margin-bottom: 43px;
+@media (max-width: 1260px) {
+  .services__item {
+    flex: 0 0 48%;
 }
-
-.runner__wrap svg path {
-  stroke-width: 2;
 }
-
-.runner__wrap svg {
-  width: 22px;
-}
-
-.runner__list {
-  gap: 15px;
-}
-
-.runner__wrap {
-  gap: 15px;
-}
-
-
 
 @media (max-width: 1168px) {
   .header__container,
-  .footer__container,
   .cases-page__container {
     padding: 5px 50px;
+  }
+
+  .footer__container {
+    padding: 11px 50px;
   }
 
   .services-detail__subtitle {
@@ -760,7 +764,7 @@
   }
 
   .services-detail__container_bot {
-    padding: 86px 33% 150px 50px;
+    padding: 86px 33% 70px 50px;
   }
 
   .services-detail__container_mid {
@@ -850,6 +854,10 @@
     top: 40px;
     height: calc(100vh - 200px);
   }
+
+  .card-serv__img {
+    width: 40px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -908,7 +916,7 @@
   }
 
   .case-deteil__container {
-    padding: 4px 0 150px 0;
+    padding: 4px 0 85px 0;
   }
 
   .not-found__subtitle {
@@ -1095,10 +1103,17 @@
     max-width: 415px;
     margin-bottom: 40px;
   }
+
+  .card-serv__img {
+    width: 40px;
+  }
+
+  .services__list {
+    padding: 0 26px;
+  }
 }
 
 @media (max-width: 768px) {
-
   .project-btn__wrap {
     padding: 0 31px;
   }
@@ -1157,8 +1172,12 @@
   }
 
   .cases-page__container {
-    padding: 0 0 77px;
+    padding: 0;
     gap: 0;
+  }
+
+  .services__list {
+    gap: 25px 10px;
   }
 
   .team__container {
@@ -1166,7 +1185,7 @@
   }
 
   .work__container {
-    padding: 38px 0 78px;
+    padding: 38px 0 15px;
   }
 
   .services__container {
@@ -1174,7 +1193,7 @@
   }
 
   .contacts-page__container {
-    padding: 58px 0 118px;
+    padding: 58px 0 50px;
   }
 
   .services__container_brif {
@@ -1182,7 +1201,7 @@
   }
 
   .services__container_bot {
-    padding: 80px 0 80px;
+    padding: 80px 0 25px;
   }
 
   .bunner__title {
@@ -1235,7 +1254,7 @@
   .header,
   .footer,
   .main {
-    padding: 0 30px;
+    padding: 0 30px 30px;
   }
 
   .header__logo svg {
@@ -1257,7 +1276,7 @@
   }
 
   .footer__container {
-    padding: 0;
+    padding: 25px 0 0;
   }
 
   .services-detail__subtitle {
@@ -1292,7 +1311,7 @@
   }
 
   .big-mail__container {
-    padding: 83px 0 97px;
+    padding: 83px 0 20px;
     gap: 23px;
   }
 
@@ -1339,6 +1358,16 @@
   }
 }
 
+@media (max-width: 720px) {
+  .services__list {
+    flex-flow: column nowrap;
+  }
+
+  .services__item {
+    flex: auto;
+  }
+}
+
 @media (max-width: 680px) {
   .not-found__subtitle {
     font-size: 8vw;
@@ -1376,7 +1405,7 @@
   }
 
   .contacts-page__container {
-    padding: 76px 0 145px;
+    padding: 76px 0 82px;
   }
 
   .contacts-page__bottom {
@@ -1444,7 +1473,7 @@
   }
 
   .cases-page__container {
-    padding: 0 0 147px;
+    padding: 0 0 25px;
   }
 
   .experience__container {
@@ -1497,7 +1526,7 @@
   }
 
   .big-mail__container {
-    padding: 80px 0 96px;
+    padding: 80px 0 20px;
   }
 
   .footer__bottom,
@@ -1540,21 +1569,20 @@
   }
 
   .services-detail__container_bot {
-    padding: 81px 0 145px 0;
+    padding: 81px 0 85px 0;
   }
 }
 
 @media (max-width: 560px) {
-
-  .services__list {  
-    flex-flow: column nowrap;  
+  .services__list {
+    flex-flow: column nowrap;
     gap: 27px;
   }
 
   .services__item {
     flex: none;
     gap: 11px;
-}
+  }
 
   .modal__title {
     font-size: 30px;
@@ -1717,8 +1745,6 @@
 
   .header__nav {
     position: absolute;
-    /* top: 60px; */
-    /* height: calc(100vh - 60px); */
     top: 50px;
     left: 0;
     width: 100%;
@@ -1798,7 +1824,6 @@
 
   .project-btn {
     width: 100%;
-    /* margin: 20px 0; */
     bottom: 25px;
     min-height: 50px;
     font-size: 16px;
@@ -1835,10 +1860,6 @@
     padding: 77px 0 90px;
   }
 
-  .card-serv__right {
-    flex: 1 0 245px;
-  }
-
   .services__brif-text {
     font-size: 14px;
     line-height: 153%;
@@ -1855,7 +1876,7 @@
   }
 
   .services__container_bot {
-    padding: 80px 0 151px;
+    padding: 80px 0 85px;
   }
 
   .services-detail__container_mid {
@@ -1918,7 +1939,7 @@
   .header,
   .footer,
   .main {
-    padding: 0 13px;
+    padding: 0 13px 13px;
   }
 
   .project-btn__wrap {
@@ -1927,13 +1948,12 @@
 }
 
 @media (max-width: 470px) {
-.cases__wrapper {
+  .cases__wrapper {
     height: 260vw;
-}
+  }
 }
 
 @media (max-width: 376px) {
-
   .burger {
     width: 45px;
     height: 40px;

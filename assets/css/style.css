@@ -396,7 +396,6 @@ img {
   position: sticky;
   left: 100%;
   bottom: 3vh;
-  /* margin: 20px 1px; */
   width: 239px;
   height: 50px;
   background: var(--color-black);
@@ -422,7 +421,7 @@ img {
 }
 
 .main {
-  padding: 67px 25px 0;
+  padding: 67px 25px 30px;
   position: relative;
   max-width: 1920px;
   margin: 0 auto;
@@ -662,7 +661,6 @@ img {
 }
 
 .case__img-wrap {
-  /* width: 414px; */
   overflow: hidden;
 }
 
@@ -825,8 +823,7 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 41px;
-  padding: 113px 0 148px;
-  border-bottom: 1px solid var(--color-E9E9E9);
+  padding: 113px 0 70px;
 }
 
 .big-mail__text {
@@ -856,6 +853,7 @@ img {
 /* #region FOOTER */
 
 .footer__container {
+  border-top: 1px solid var(--color-E9E9E9);    
   display: grid;
   padding: 11px 295px;
   grid-template-columns: 1fr 342px 260px;
@@ -1170,12 +1168,11 @@ img {
 /* #region work */
 
 .work__container {
-  padding: 50px 295px 150px;
+  padding: 50px 295px 70px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   gap: 5%;
-  border-bottom: 1px solid var(--color-E9E9E9);
 }
 
 .work__left {
@@ -1300,11 +1297,10 @@ img {
 /* #region contacts-page */
 
 .contacts-page__container {
-  padding: 49px 295px 143px;
+  padding: 49px 295px 65px;
   display: flex;
   flex-flow: column nowrap;
   gap: 281px;
-  border-bottom: 1px solid var(--color-E9E9E9);
 }
 
 .contacts-page__adres {
@@ -1464,7 +1460,6 @@ img {
 
 .services__container {
   padding: 39px 295px 113px;
-  border-bottom: 1px solid var(--color-E9E9E9);
 }
 
 .services__title {
@@ -1480,11 +1475,11 @@ img {
   flex-flow: row wrap;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 25px 44px;
+  gap: 25px 2%;
 }
 
 .services__item {
-  flex: 0 1 380px;
+  flex: 0 0 31%;
 }
 
 .services__item svg {
@@ -1496,6 +1491,10 @@ img {
   display: flex;
   flex-flow: row nowrap;
   gap: 15px;
+}
+
+.card-serv__img {
+  align-self: flex-start;
 }
 
 .card-serv__right {
@@ -1543,7 +1542,7 @@ img {
 
 .services__btn,
 .services-detail__btn {
-  max-width: 314px;
+  min-width: 314px;
   min-height: 54px;
   padding: 17px 25px 17px 25px;
   color: var(--color-black);
@@ -1580,8 +1579,7 @@ img {
   flex-flow: column nowrap;
   gap: 21px;
   padding-top: 90px;
-  padding-bottom: 149px;
-  border-bottom: 1px solid var(--color-E9E9E9);
+  padding-bottom: 67px;
 }
 
 .services__about {
@@ -1682,7 +1680,7 @@ img {
 /* #region cases-page */
 
 .cases-page__container {
-  padding: 10px 295px 65px 0;
+  padding: 10px 295px 25px 0;
   display: flex;
   flex-flow: row nowrap;
   gap: 58px;
@@ -1690,7 +1688,6 @@ img {
 
 .cases-page {
   padding-top: 20px;
-  border-bottom: 1px solid var(--color-E9E9E9);
 }
 
 .cases-page__filter-wrap {
@@ -1775,6 +1772,7 @@ img {
 
 
 .cases-page__list {
+  width: 100%;
   padding-top: 13px;
   display: flex;
   flex-flow: row wrap;
@@ -1796,7 +1794,6 @@ img {
   margin-bottom: 19px;
   position: relative;
   max-width: 604px;
-  /* height: 319px; */
   overflow: hidden;
 }
 
@@ -1838,8 +1835,7 @@ img {
 /* ---------- */
 /* #region case-deteil */
 .case-deteil__container {
-  border-bottom: 1px solid var(--color-E9E9E9);
-  padding: 20px 0 150px 0;
+  padding: 20px 0 73px 0;
 }
 
 .case-deteil__header {
@@ -2154,11 +2150,10 @@ img {
 }
 
 .services-detail__container_bot {
-  padding: 91px 620px 150px 295px;
+  padding: 91px 620px 70px 295px;
   display: flex;
   flex-flow: column nowrap;
   gap: 21px;
-  border-bottom: 1px solid var(--color-EDEDED);
 }
 
 .services-detail__about {
