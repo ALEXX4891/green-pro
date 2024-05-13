@@ -1,0 +1,119 @@
+<form class="popup-form__project-form project-form ajax_form" action="" method="post">
+  {$fi.successMessage}
+  {$fi.validation_error_message}
+  <a class="project-form__close popup-close">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.999999 15L8 7.92308M1 0.999999L8 7.92308M8 7.92308L14.5 0.999999M8 7.92308L14.5 15" stroke="black"
+        stroke-width="1.5" stroke-linecap="round" />
+    </svg>
+  </a>
+  <h2 class="project-form__title">
+    Обсудим проект?
+  </h2>
+  <p class="project-form__subtitle">
+    Расскажите нам про вашу идею
+  </p>
+
+  <div class="project-form__inputs">
+
+    <div class="project-form__wrapper project-form__wrapper_col">
+      <span class="error_name">{$fi.error.name}</span>
+      <input class="project-form__input" type="text" name="name" value="" placeholder="Как вас зовут?">
+    </div>
+
+    <div class="project-form__wrapper project-form__wrapper_col">
+      <span class="error_email">{$fi.error.email}</span>
+      <input class="project-form__input" type="email" name="email" value="" placeholder="E-mail*">
+    </div>
+
+    <div class="project-form__wrapper project-form__wrapper_col">
+      <span class="error_company">{$fi.error.company}</span>
+      <input class="project-form__input" type="text" name="company" value="" placeholder="Компания">
+    </div>
+  </div>
+  
+  <span class="error_filter">{$fi.error.filter}</span>
+    <div class="project-form__select-wrap">
+    <p class="project-form__select-title">Тип мероприятия*</p>
+    <select class="project-form__select" name="filter" value="">
+      <option class="project-form__option" name="filter" value="" selected disabled>
+        Выбрать
+      </option>
+      <option class="project-form__option" name="filter" value="Тимбилдинг" >
+        Тимбилдинг
+      </option>
+      <option class="project-form__option" name="filter" value="Деловые мероприятия" >
+        Деловые мероприятия
+      </option>
+      <option class="project-form__option" name="filter" value="Маркетинг и промо" >
+        Маркетинг и промо
+      </option>
+      <option class="project-form__option" name="filter" value="Выездные" >
+        Выездные
+      </option>
+      <option class="project-form__option" name="filter" value="Спортивные" >
+        Спортивные
+      </option>
+      <option class="project-form__option" name="filter" value="Корпоративные" >
+        Корпоративные
+      </option>
+      <option class="project-form__option" name="filter" value="professional-skill-events" >
+        Мероприятия профессионального мастерства
+      </option>
+    </select>
+  </div>
+
+ <span class="error_approval">{$fi.error.textarea}</span>
+  <label class="project-form__label project-form__label_textarea">
+    Комментарий
+    <textarea class="project-form__textarea" name="textarea" value="" rows="3"
+      placeholder="Поговорим о деталях"></textarea>
+  </label>
+  
+  <span class="error_approval">{$fi.error.budget}</span>
+  <div class="project-form__wrapper">
+    <p class="project-form__subtitle project-form__subtitle_buttons">
+      Примерный бюджет
+    </p>
+    <p class="project-form__desc">
+      Выберите диапозон
+    </p>
+  </div>
+
+  <div class="project-form__btns">
+    <input type="hidden" name="budget" value="">
+    <input class="project-form__radio" type="radio" name="budget" value="от 200 тысяч р." id="200t">
+    <label class="project-form__btn" for="200t">
+      от 200 тысяч р.
+    </label>
+
+    <input class="project-form__radio" type="radio" name="budget" value="до 500 тысяч р." id="500t">
+    <label class="project-form__btn project-form__btn_active" for="500t">
+      до 500 тысяч р.
+    </label>
+
+    <input class="project-form__radio" type="radio" name="budget" value="до 700 тысяч р." id="700t">
+    <label class="project-form__btn" for="700t">
+      до 700 тысяч р.
+    </label>
+
+    <input class="project-form__radio" type="radio" name="budget" value="до 1 млн р." id="1000t">
+    <label class="project-form__btn" for="1000t">
+      до 1 млн р.
+    </label>
+  </div>
+
+  <span class="error_approval">{$fi.error.approval}</span>
+  <label class="project-form__label_check" tabindex="0">
+    Я даю согласие на <a class="project-form__link" href="./pers-info.html">обработку персональных данных</a>
+    <input type="hidden" name="approval" value="">
+    <input class="project-form__checkbox" type="checkbox" name="approval" value="да">
+    <span class="project-form__mark"></span>
+  </label>
+
+  <button class="project-form__submit btn-reset" type="submit">
+    Отправить
+  </button>
+
+
+</form>
