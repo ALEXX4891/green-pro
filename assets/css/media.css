@@ -37,7 +37,7 @@
   }
 
   .services-detail__container_bot {
-    padding: 91px 33% 150px 295px;
+    padding: 91px 33% 70px 295px;
   }
 
   .bunner__subtitle {
@@ -46,16 +46,6 @@
 
   .runner__text {
     font-size: 2.6vw;
-  }
-
-  .cases__wrapper {
-    height: 87vw;
-    gap: 3% 1%;
-  }
-
-  .case {
-    width: 32.59%;
-    gap: 0.7vw;
   }
 
   .case__desc {
@@ -118,14 +108,17 @@
 @media (max-width: 1870px) {
   .services__list {
     justify-content: space-between;
-    gap: 25px 10px;
+    gap: 25px 2%;
   }
 }
 
 @media (max-width: 1720px) {
-  .header__container,
-  .footer__container {
+  .header__container {
     padding: 5px 150px;
+  }
+
+  .footer__container {
+    padding: 11px 150px 5px;
   }
 
   .services-detail__subtitle {
@@ -166,7 +159,7 @@
   }
 
   .services-detail__container_bot {
-    padding: 86px 33% 150px 150px;
+    padding: 86px 33% 70px 150px;
   }
 
   .services-detail__container_mid {
@@ -185,7 +178,7 @@
 
   .cases__container,
   .cases-page__container {
-    padding: 68px 150px 68px 0;
+    padding: 68px 150px 25px 0;
   }
 
   .team__title {
@@ -223,10 +216,6 @@
     gap: 43px 1%;
   }
 
-  .cases__wrapper {
-    height: 101vw;
-  }
-
   .clients__left-block,
   .cases__left-block {
     flex: 0 1 127px;
@@ -241,7 +230,8 @@
 @media (max-width: 1460px) {
   .header__container,
   .footer__container {
-    padding: 5px 100px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .services-detail__subtitle {
@@ -273,7 +263,7 @@
   }
 
   .services-detail__container_bot {
-    padding: 86px 33% 150px 100px;
+    padding: 86px 33% 70px 100px;
   }
 
   .services-detail__container_mid {
@@ -483,7 +473,7 @@
   .clients__container,
   .cases__container,
   .cases-page__container {
-    padding: 68px 100px;
+    padding: 68px 100px 25px;
     flex-flow: column nowrap;
   }
 
@@ -523,11 +513,6 @@
 
   .card-serv__right {
     gap: 13px;
-    flex: 1 0 250px;
-  }
-
-  .services__item {
-    flex: 1 0 300px;
   }
 
   .services__title {
@@ -632,10 +617,6 @@
     left: 0;
   }
 
-  .cases__wrapper {
-    height: 108vw;
-  }
-
   .footer__bottom {
     flex-direction: column;
     gap: 20px;
@@ -697,34 +678,38 @@
 
   .agency__container {
     padding: 47px 0 20px;
-  }
+    }
 
-  .agency__logo {
-    margin-bottom: 43px;
-  }
+    .agency__logo {
+      margin-bottom: 43px;
+    }
 
-  .runner__wrap svg path {
-    stroke-width: 2;
-  }
+    .runner__wrap svg path {
+      stroke-width: 2;
+    }
 
-  .runner__wrap svg {
-    width: 22px;
-  }
+    .runner__wrap svg {
+      width: 22px;
+    }
 
-  .runner__list {
-    gap: 15px;
-  }
+    .runner__list {
+      gap: 15px;
+    }
 
-  .runner__wrap {
-    gap: 15px;
+    .runner__wrap {
+      gap: 15px;
+  }
   }
 }
 
 @media (max-width: 1168px) {
   .header__container,
-  .footer__container,
   .cases-page__container {
     padding: 5px 50px;
+  }
+
+  .footer__container {
+    padding: 11px 50px;
   }
 
   .services-detail__subtitle {
@@ -756,7 +741,7 @@
   }
 
   .services-detail__container_bot {
-    padding: 86px 33% 150px 50px;
+    padding: 86px 33% 70px 50px;
   }
 
   .services-detail__container_mid {
@@ -790,10 +775,6 @@
   .clients__container,
   .cases__container {
     padding: 68px 50px;
-  }
-
-  .cases__wrapper {
-    height: 118vw;
   }
 
   .work__list {
@@ -845,6 +826,10 @@
   .cases-page__filter {
     top: 40px;
     height: calc(100vh - 200px);
+  }
+
+  .card-serv__img {
+    width: 40px;
   }
 }
 
@@ -904,7 +889,7 @@
   }
 
   .case-deteil__container {
-    padding: 4px 0 150px 0;
+    padding: 4px 0 85px 0;
   }
 
   .not-found__subtitle {
@@ -1091,6 +1076,33 @@
     max-width: 415px;
     margin-bottom: 40px;
   }
+
+  .card-serv__img {
+    width: 40px;
+  }
+
+  .services__list {
+    padding: 0 26px;
+  }
+
+  .case__img-wrap svg {
+    top: 6px;
+    right: 6px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .case__link {
+    gap: 11px;
+  }
+
+  .case {
+    margin-bottom: 15px;
+  }
+
+  .cases__wrapper {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1152,8 +1164,12 @@
   }
 
   .cases-page__container {
-    padding: 0 0 77px;
+    padding: 0;
     gap: 0;
+  }
+
+  .services__list {
+    gap: 25px 10px;
   }
 
   .team__container {
@@ -1161,7 +1177,7 @@
   }
 
   .work__container {
-    padding: 38px 0 78px;
+    padding: 38px 0 15px;
   }
 
   .services__container {
@@ -1169,7 +1185,7 @@
   }
 
   .contacts-page__container {
-    padding: 58px 0 118px;
+    padding: 58px 0 50px;
   }
 
   .services__container_brif {
@@ -1177,7 +1193,7 @@
   }
 
   .services__container_bot {
-    padding: 80px 0 80px;
+    padding: 80px 0 25px;
   }
 
   .bunner__title {
@@ -1230,7 +1246,7 @@
   .header,
   .footer,
   .main {
-    padding: 0 30px;
+    padding: 0 30px 30px;
   }
 
   .header__logo svg {
@@ -1252,7 +1268,7 @@
   }
 
   .footer__container {
-    padding: 0;
+    padding: 25px 0 0;
   }
 
   .services-detail__subtitle {
@@ -1287,16 +1303,12 @@
   }
 
   .big-mail__container {
-    padding: 83px 0 97px;
+    padding: 83px 0 20px;
     gap: 23px;
   }
 
   .case__title {
     padding: 0;
-  }
-
-  .cases__wrapper {
-    height: 136vw;
   }
 
   .burger {
@@ -1331,6 +1343,16 @@
 
   .services-detail__carousel {
     margin-left: -30px;
+  }
+}
+
+@media (max-width: 720px) {
+  .services__list {
+    flex-flow: column nowrap;
+  }
+
+  .services__item {
+    flex: auto;
   }
 }
 
@@ -1371,7 +1393,7 @@
   }
 
   .contacts-page__container {
-    padding: 76px 0 145px;
+    padding: 76px 0 82px;
   }
 
   .contacts-page__bottom {
@@ -1439,7 +1461,7 @@
   }
 
   .cases-page__container {
-    padding: 0 0 147px;
+    padding: 0 0 25px;
   }
 
   .experience__container {
@@ -1492,7 +1514,7 @@
   }
 
   .big-mail__container {
-    padding: 80px 0 96px;
+    padding: 80px 0 20px;
   }
 
   .footer__bottom,
@@ -1535,11 +1557,13 @@
   }
 
   .services-detail__container_bot {
-    padding: 81px 0 145px 0;
+    padding: 81px 0 85px 0;
   }
 }
 
 @media (max-width: 560px) {
+  .services__list {
+    flex-flow: column nowrap;
   .services__list {
     flex-flow: column nowrap;
     gap: 27px;
@@ -1548,7 +1572,7 @@
   .services__item {
     flex: none;
     gap: 11px;
-  }
+    }
 
   .modal__title {
     font-size: 30px;
@@ -1711,8 +1735,6 @@
 
   .header__nav {
     position: absolute;
-    /* top: 60px; */
-    /* height: calc(100vh - 60px); */
     top: 50px;
     left: 0;
     width: 100%;
@@ -1792,7 +1814,6 @@
 
   .project-btn {
     width: 100%;
-    /* margin: 20px 0; */
     bottom: 25px;
     min-height: 50px;
     font-size: 16px;
@@ -1829,10 +1850,6 @@
     padding: 77px 0 90px;
   }
 
-  .card-serv__right {
-    flex: 1 0 245px;
-  }
-
   .services__brif-text {
     font-size: 14px;
     line-height: 153%;
@@ -1849,7 +1866,7 @@
   }
 
   .services__container_bot {
-    padding: 80px 0 151px;
+    padding: 80px 0 85px;
   }
 
   .services-detail__container_mid {
@@ -1877,33 +1894,6 @@
     padding: 75px 0 100px;
   }
 
-  .cases__wrapper {
-    height: 250vw;
-    gap: 1% 1%;
-  }
-
-  .case__img-wrap {
-    width: 96%;
-  }
-
-  .case__img-wrap svg {
-    width: 10px;
-    top: 1px;
-    right: 14px;
-  }
-
-  .case__title {
-    min-height: 40px;
-  }
-
-  .case {
-    width: 50%;
-  }
-
-  .case:last-child {
-    display: none;
-  }
-
   .clients__item {
     width: 45%;
     height: 51px;
@@ -1912,7 +1902,7 @@
   .header,
   .footer,
   .main {
-    padding: 0 13px;
+    padding: 0 13px 13px;
   }
 
   .project-btn__wrap {
@@ -1929,6 +1919,11 @@
   .cases__wrapper {
     height: 260vw;
   }
+}
+
+  .case {
+    margin-bottom: 27px;
+}
 }
 
 @media (max-width: 376px) {
@@ -1952,10 +1947,6 @@
 
   .not-found__container {
     padding: 90px 0 200px;
-  }
-
-  .cases__wrapper {
-    height: 265vw;
   }
 
   .not-found__title {
@@ -2004,23 +1995,5 @@
 
   .carousel__list {
     gap: 24px;
-  }
-}
-
-@media (max-width: 350px) {
-  .cases__wrapper {
-    height: 270vw;
-  }
-}
-
-@media (max-width: 330px) {
-  .cases__wrapper {
-    height: 280vw;
-  }
-}
-
-@media (max-width: 280px) {
-  .cases__wrapper {
-    height: 300vw;
   }
 }
