@@ -840,7 +840,7 @@ img {
 .big-mail__link {
   margin: 0;
   font-family: Montserrat;
-  font-size: 128px;
+  font-size: 90px;
   font-weight: 500;
   text-transform: uppercase;
   border-bottom: 10px solid var(--color-black);
@@ -1486,9 +1486,15 @@ img {
   flex: 0 0 31%;
 }
 
-.services__item svg {
+.services__item:hover .card-serv__img {
+  transform: scale(1.10);
+}
+
+.services__item .card-serv__img {
+  display: block;
   flex-shrink: 0;
   align-self: start;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card-serv__link {
@@ -1558,6 +1564,7 @@ img {
   text-transform: uppercase;
   cursor: pointer;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  text-align: center;
 }
 
 .services__btn {
@@ -1590,7 +1597,7 @@ img {
   max-width: 880px;
   color: var(--color-5C5C5C);
   font-family: Montserrat;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 150%;
 }
 
@@ -2163,7 +2170,7 @@ img {
   color: rgb(92, 92, 92);
   color: #5c5c5c;
   font-family: Montserrat;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 150%;
   text-align: left;

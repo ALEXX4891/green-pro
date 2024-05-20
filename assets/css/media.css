@@ -59,7 +59,7 @@
   }
 
   .big-mail__link {
-    font-size: 6.8vw;
+    font-size: 4.8vw;
   }
 
   .work__container {
@@ -1437,6 +1437,10 @@
   }
 
   .services-detail__about {
+    font-size: 12px;
+  }
+
+  .services__about {
     font-size: 12px;
   }
 
