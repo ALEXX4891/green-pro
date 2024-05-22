@@ -457,7 +457,11 @@
           </svg>
         </div>
         <div class="agency__img">
-          <!-- <img src="./assets/img/agency.jpg" alt=""> -->
+          <picture>
+            <source media="(min-width: 560px)" srcset="./assets/img/agency.jpg" type="image/jpeg">
+            <source media="(max-width: 560px)" srcset="./assets/img/agency_mob.jpg" type="image/jpeg">
+            <img src="./assets/img/agency.jpg" alt="груповое фото сотрудников компании">
+          </picture>
           <h2 class="agency__title">
             Ваше event
             агентство
