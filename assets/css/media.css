@@ -1496,6 +1496,10 @@
     gap: 17px;
   }
 
+  .work__item:last-child {
+    margin-bottom: 40px;
+  }
+
   .experience__bottom-right {
     flex-flow: column nowrap;
     gap: 41px;
@@ -1577,6 +1581,10 @@
   .services__item {
     flex: none;
     gap: 11px;
+  }
+
+  .services__item:last-child {
+    margin-bottom: 40px;
   }
 
   .modal__title {
@@ -1952,6 +1960,12 @@
   .case__title {
     min-height: unset;
   }
+  .contacts-page__tel, .contacts-page__mail {
+    font-size: 25px;
+}
+.contacts-page__mess {
+  font-size: 13px;
+}
 }
 
 @media (max-width: 470px) {
