@@ -408,6 +408,11 @@ img {
     border 0.3s ease-in-out;
 }
 
+.project-btn_mob_show {
+  display: none;
+  height: 0;
+}
+
 .project-btn:hover {
   background-color: var(--color-white);
   color: var(--color-black);
@@ -1545,6 +1550,10 @@ img {
   font-family: Montserrat;
   font-size: 16px;
   line-height: 118%;
+}
+
+.services__container_top {
+  border-bottom: 1px solid var(--color-E9E9E9);
 }
 
 .services__container_brif {
