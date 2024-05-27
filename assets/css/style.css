@@ -1567,6 +1567,24 @@ img {
   text-align: center;
 }
 
+.owl-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.owl-prev span {
+  font-size: 50px;
+  color: #5c5c5c;
+}
+
+.owl-next span {
+  font-size: 50px;
+  color: #5c5c5c;
+}
+
 .services__btn {
   max-width: 314px;
   min-height: 54px;
