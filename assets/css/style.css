@@ -668,7 +668,6 @@ img {
 }
 
 .case__title {
-  min-height: 59px;
   width: 100%;
   color: var(--color-black);
   font-size: 20px;
@@ -1317,7 +1316,7 @@ img {
   padding: 49px 295px 65px;
   display: flex;
   flex-flow: column nowrap;
-  gap: 281px;
+  gap: 140px;
 }
 
 .contacts-page__adres {
@@ -1577,7 +1576,7 @@ img {
 
 .services__btn,
 .services-detail__btn {
-  min-width: 314px;
+  width: 314px;
   min-height: 54px;
   padding: 17px 25px 17px 25px;
   color: var(--color-black);
@@ -1590,24 +1589,6 @@ img {
   cursor: pointer;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   text-align: center;
-}
-
-.owl-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-}
-
-.owl-prev span {
-  font-size: 50px;
-  color: #5c5c5c;
-}
-
-.owl-next span {
-  font-size: 50px;
-  color: #5c5c5c;
 }
 
 .services__btn {
@@ -2690,3 +2671,21 @@ img {
   line-height: 100%;
 }
 /*куки*/
+
+.owl-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.owl-prev span {
+  font-size: 50px;
+  color: #5c5c5c;
+}
+
+.owl-next span {
+  font-size: 50px;
+  color: #5c5c5c;
+}
