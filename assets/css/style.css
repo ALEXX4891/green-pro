@@ -2094,7 +2094,7 @@ img {
   display: flex;
   flex-flow: column nowrap;
   gap: 24px;
-  padding: 50px 295px 94px;
+  padding: 50px 295px 82px;
   border-bottom: 1px solid var(--color-EDEDED);
 }
 .services-detail__link {
@@ -2130,7 +2130,7 @@ img {
   text-align: left;
 }
 .services-detail__container_mid {
-  padding: 90px 0 67px;
+  padding: 90px 0 107px;
   border-bottom: 1px solid var(--color-EDEDED);
 }
 
@@ -2184,17 +2184,21 @@ img {
 }
 
 .services-detail__container_bot {
-  padding: 91px 620px 70px 295px;
+  padding: 60px 620px 10px 295px;
   display: flex;
   flex-flow: column nowrap;
   gap: 21px;
+}
+
+.services-detail__container_bot .services-detail__btn {
+  margin-bottom: 85px;
 }
 
 .services-detail__about {
   color: rgb(92, 92, 92);
   color: #5c5c5c;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 150%;
   text-align: left;
@@ -2673,19 +2677,67 @@ img {
 /*куки*/
 
 .owl-nav {
-  width: 100%;
+  position: absolute;
+  top: -73px;
+  right: 318px;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   align-items: center;
+
+}
+
+.owl-prev {
+  /* border: 1px solid #000; */
+  background: url("../img/owl_prev.svg") !important;
+  width: 32px;
+  height: 29px;
+
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+
+  cursor: pointer;
+}
+
+.owl-next {
+  background: url("../img/owl_next.svg") !important;
+  width: 32px;
+  height: 29px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  cursor: pointer;
+
 }
 
 .owl-prev span {
-  font-size: 50px;
-  color: #5c5c5c;
+  display: none;
+/* background-image: url("../img/owl_prev.svg");
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  cursor: pointer; */
 }
 
 .owl-next span {
-  font-size: 50px;
-  color: #5c5c5c;
+  display: none;
+
+  /* display: block; */
+
+  /* background-image: url("../img/owl_next.svg");
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  cursor: pointer; */
+}
+
+
+.services-detail__container_btn {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 30px;
+  padding: 60px 295px 56px;
+  border-bottom: 1px solid var(--color-EDEDED);
 }

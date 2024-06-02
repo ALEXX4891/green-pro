@@ -1,0 +1,84 @@
+<main class="main">
+  <section class="section services-detail">
+
+    <div class="container services-detail__container services-detail__container_top">
+
+      <a class="services-detail__link" href="{$_modx->makeUrl($_modx->resource.parent)}">
+        <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.0151 9.99463L1.99953 10.0054M1.99953 10.0054L10.9878 18.3325M1.99953 10.0054L10.9878 1.01711"
+            stroke="#0F6F2E" stroke-width="2" />
+        </svg>
+        <p class="services-detail__link-text">
+          Все услуги
+        </p>
+      </a>
+
+      <h1 class="services-detail__title">
+       {$_modx->resource.longtitle}
+      </h1>
+
+      <h4 class="services-detail__desc">
+        Бизнес-мероприятия любого формата и масштаба – совещания, конференции, тренинги, выставки, презентации,
+        форумы.
+      </h4>
+
+
+
+    </div>
+
+    <div class="container services-detail__container services-detail__container_mid">
+      <h3 class="services-detail__subtitle">
+        Проведенные мероприятия
+      </h3>
+
+      <div class="services-detail__carousel carousel">
+
+        {$_modx->runSnippet('pdoMenu', [
+          'parents' => ($.get['id'] > 0 ? $.get['id'] : '3,12,17,16,14,11,15'),
+          'includeTVs' => 'image',
+          'rowTpl' => 'cases-card-service',
+          'outerTpl' => '@INLINE <ul class="carousel__list owl-carousel">[[+wrapper]]</ul>',
+        ])}
+        
+      </div>
+
+    </div>
+
+    <div class="container services-detail__container services-detail__container_bot">
+      <p class="services-detail__brif-text">
+        Вы&nbsp;готовы рассказать нам о&nbsp;проекте и&nbsp;получить первичный расчет стоимости проведения? Заполните
+        бриф и&nbsp;мы&nbsp;свяжемся с&nbsp;вами для уточнения деталей.
+      </p>
+      <button class="services-detail__btn">
+        Заполнить бриф
+      </button>
+      <p class="services-detail__about">
+        Команда GREEN TREE специализируется на&nbsp;создании мероприятий, предлагая своим клиентам полный спектр
+        услуг, связанных с&nbsp;организацией событий любого масштаба и&nbsp;сложности.
+      </p>
+
+      <p class="services-detail__about">
+        Благодаря индивидуальному подходу, мы, совместно с&nbsp;клиентом создаем события, способные запомниться
+        надолго. <br> Следуя за&nbsp;последними тенденциями и&nbsp;технологиями в&nbsp;сфере мероприятий, команда
+        предлогает клиентам инновационные и&nbsp;качественные решения.
+      </p>
+
+      <p class="services-detail__about">
+        GREEN TREE сотрудничает с&nbsp;внушительную базу проверенных поставщиков и&nbsp;партнеров, благодаря которым
+        становится возможным обеспечить высокое качество услуг и&nbsp;оригинальные концепции мероприятий.
+
+      </p>
+
+      <p class="services-detail__about">
+        Свяжитесь с&nbsp;нами, и&nbsp;мы&nbsp;поможем воплотить вашу мечту в&nbsp;реальность и&nbsp;сделать ваше
+        событие по-настоящему особенным!
+      </p>
+
+    </div>
+
+  </section>
+  <a class="btn-reset project-btn popup-link lock-padding project-btn_mob_hide" href="#popup-form">
+    обсудить проект
+  </a>
+
+</main>
